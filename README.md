@@ -1,3 +1,3 @@
-#TENNIS GAME
+# TENNIS GAME
 
 npm i && npm test
