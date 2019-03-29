@@ -59,7 +59,7 @@ function Play1000Matchs(){
         superchampion.push(winner)
     }
     console.log(`${p1.name} wins ${superchampion.filter(champ => champ === p1.name).length} times` )
-    console.log(`${p2.name} wins ${superchampion.filter(champ => champ === p2.name).length} veces` )
+    console.log(`${p2.name} wins ${superchampion.filter(champ => champ === p2.name).length} times` )
 }
 Play1000Matchs();
  
