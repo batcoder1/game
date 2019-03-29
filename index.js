@@ -1,22 +1,22 @@
 
 const Tennis = require('./tennis')
 
+let p1= {
+    name: 'Nadal',
+    speed: 6,
+    agility: 6,
+    power: 8,
+    stamina: 10,
+};
+let p2= {
+    name: 'Djokovic',
+    speed: 4,
+    agility: 6,
+    power: 10,
+    stamina: 10,
+};
 function startGame() {
 
-    let p1= {
-        name: 'Nadal',
-        speed: 6,
-        agility: 6,
-        power: 8,
-        stamina: 10,
-    };
-    let p2= {
-        name: 'Djokovic',
-        speed: 4,
-        agility: 6,
-        power: 10,
-        stamina: 10,
-    };
     const tennis = new Tennis(p1,p2) 
     
     //skill weights
@@ -58,8 +58,8 @@ function Play1000Matchs(){
         let winner =startGame();
         superchampion.push(winner)
     }
-    console.log(`Nadal ha ganado ${superchampion.filter(champ => champ === 'Nadal').length} veces` )
-    console.log(`Djokovic ha ganado ${superchampion.filter(champ => champ === 'Djokovic').length} veces` )
+    console.log(`${p1.name} wins ${superchampion.filter(champ => champ === p1.name).length} times` )
+    console.log(`${p2.name} wins ${superchampion.filter(champ => champ === p2.name).length} veces` )
 }
 Play1000Matchs();
  
