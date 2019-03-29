@@ -7,7 +7,7 @@
 
 #### npm i && npm start
 
-You can modify players skils and get difrents results. Try it!
+You can modify players skils and get differents results. Try it!
 
 ```json
   const player1= {
